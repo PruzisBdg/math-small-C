@@ -1,0 +1,4 @@
+..\\bldcfg.h(56,31): #error "Target not defined"
+  Preprocessing error. (Use -preproc to inhibit warning)
+   In file included from C:\SPJ1\swr\tiny1\public\common.h(27),
+                 from abs_s8.c(1)

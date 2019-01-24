@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="math_x86_gcc" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/math_x86_gcc" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/math_x86_gcc" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-D__TOOL_IS_X86_GCC__" />
+			<Add directory="../private" />
+			<Add directory="../public" />
+			<Add directory="../GenericTypes" />
+			<Add directory="../tiny2_public" />
+		</Compiler>
+		<Unit filename="../GenericTypes/GenericTypeDefs.h" />
+		<Unit filename="../arith/src/acc/scalar_acc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/acc/scalar_acc_dev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/acc/scalar_acc_dev_clear.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/acc/scalar_acc_dev_dev_sum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/acc/scalar_acc_dev_mean_dev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/acc/scalar_acc_dev_read_clear.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/AddTwoS16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/a_minus_b_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/a_minus_b_u32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/a_minus_b_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/add_two_S8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/add_two_s32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/add_two_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/decr_u8_was1_now0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/decrement_u8_is_zero.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/increment_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/addsubtract/u8_plus_s8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/arith_testbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/Mean2_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/Ratio10_S16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/absS32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/abs_s8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/absdiffU8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/abss16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/inv_sum_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/inv_sum_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/mix_rms_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/mixrms_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/pcent_diff_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/pcent_diff_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/rms_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/root_sum_square_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/rshift16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/sign_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/sign_s8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/spin_down_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/spin_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/spin_up_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/sq_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/sq_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/sqrt_u16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/sqrtint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/sqrtlong.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/t1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/within_pcent_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/basic/within_pcent_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/float/Get_pwr10_float.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/func/bitlog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/func/msb_u16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/interpolation/MapToSCurve.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/interpolation/clippedLinsquare.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/interpolation/interpolate2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/interpolation/interpolate2_U8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/interpolation/interpolate2xy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/interpolation/interpolate_newtonfwd2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/interpolation/linterp_ytbl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/interpolation/mixs16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/interpolation/mixu8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/Clip_S16_into_U8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/MinS16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/MinS8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/S32_fits_in_S16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/aGTb_signed_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/aLTb_signed_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_S32_to_S16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_float_to_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_float_to_long.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_float_to_u16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_long.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_long_to_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_pos_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_s16_into_S8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_u16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_u16_to_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_u32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_u32_to_u16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clips8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/inside_limits_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/inside_limits_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/keepout_S16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/maxS16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/maxU32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/max_abs_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/maxs8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/maxu8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/minU16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/minU32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/minu8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/s32_outside_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/slew_limit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/muldiv/A_mul_B_div_c_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/muldiv/AmulBdivC_S16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/muldiv/AmulBdivC_S16_U8_U8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/muldiv/MulS16_to_S16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/muldiv/mul16_right_shift_16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/muldiv/mul_u8_roundoff_corrected.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/muldiv/muls16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/muldiv/s16_by_percent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/muldiv/u8_by_percent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/muldiv/u8_by_tenths.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/sorts/BubbleSortU8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/sorts/bubblesortS16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/sorts/median3_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/sorts/rankfilt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/sorts/rankints.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/sorts/rankuchars.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecU8/vecU8_mean.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecU8/vecu8_Max.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecU8/vecu8_dev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecU8/vecu8_devsum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecU8/vecu8_sum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vec_decimator/vec_decimator.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_ClipSame.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_byFraction.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_centroid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_largest_diff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_max.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_maxIdx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_max_abs_diff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_mean.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_meandiff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_min.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_span.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_sum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb/vecb_sum_to_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/vecb_span.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/alpha_beta_tracker.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/decfir_float_flush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/decfir_float_make.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/decfir_float_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/decfir_flush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/decfir_make.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/decfir_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/decfir_run_s.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/fir_fill.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/fir_float_flush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/fir_float_make.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/fir_float_reset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/fir_float_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/fir_flush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/fir_make.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/fir_reset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/fir_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/fir_setcoffs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir2_fp_make.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir2_fp_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir2_fpfp_flush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir2_fpfp_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_1_GetCoff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_1_HPass_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_1_LPass_Prime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_1_Lpass_RunNewScale.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_1_Rescale.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_1_hpass_prime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_1_initval.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_1_read.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_1_vec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_2_fp_flush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_2_vec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_2x2_fp_vec_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_2x2_fp_vec_init_multicoffs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_2x2p_fp_vec_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_3x2_fp_vec_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_3x2_fp_vec_init_multicoffs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_3x2p_fp_vec_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_Nx2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_Nx2_fp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_Nx2_fp_vec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_Nx2_fp_vec_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_Nx2_fp_vec_init_multicoffs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_Nx2p_fp_vec_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_nx2_fpfp_cascade_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_nx2_fpfp_flush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/iir_nx2_fpfp_parallel_run.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../filt/src/pid_servo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/functtestbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/intdiff/integrate_simpson_double.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/intdiff/integrate_simpson_float.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/intdiff/integrate_simpson_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/oddball/rewire_u16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/trig/atan_fp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/trig/cos_fp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/trig/cos_fp_90.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/trig/cos_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/trig/sine_fp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/trig/sine_fp_90.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../func/src/trig/sine_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../fuzzy/src/fuzzy__trapezoid_s16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../fuzzy/src/fuzzy__trapezoid_u8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../private/bldcfg.h" />
+		<Unit filename="../private/common.h" />
+		<Unit filename="../private/libs_support.h" />
+		<Unit filename="../public/abtracker.h" />
+		<Unit filename="../public/arith.h" />
+		<Unit filename="../public/firfilt.h" />
+		<Unit filename="../public/fuzzy_a.h" />
+		<Unit filename="../public/iirFilt1.h" />
+		<Unit filename="../public/iirfilt.h" />
+		<Unit filename="../public/iirfilt_fp.h" />
+		<Unit filename="../public/math_common.h" />
+		<Unit filename="../public/mathfunc.h" />
+		<Unit filename="../public/pid_servo.h" />
+		<Unit filename="../public/ratelimit.h" />
+		<Unit filename="../public/sine_osc.h" />
+		<Unit filename="../public/vec.h" />
+		<Unit filename="../sig/src/ratelimit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sig/src/sine_osc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/FillBytes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/Vec_RefRow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/Vec_Span.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/copybytes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/copyints.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/fillints.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/sqrtlong.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_Addscalar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_RowCOG.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_bubblesort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_byelement.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_byelementT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_byfraction.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_copy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_diff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_extents.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_fill.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_join.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_linterp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_linterp_xytable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_makemultiple.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_match.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_max.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_mean.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_meanabs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_min.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_minmax.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_normalise.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_peaks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_read1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_ref.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_rms.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_sequence.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_size.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_stddev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_sub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_subtract.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_sumrow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_transpose.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_transpose1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_wrapstring.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_write.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../svec/src/vec_write1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../tiny2_public/systime.h" />
+		<Unit filename="../tiny2_public/util.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

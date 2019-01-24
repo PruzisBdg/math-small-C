@@ -1,0 +1,57 @@
+; C:\SPJ1\SWR\MATH\ARITH\SRC\BASIC\RSHIFT16.SRC generated from: C:\SPJ1\SWR\MATH\ARITH\SRC\BASIC\RSHIFT16.C
+; 18/02/11 15:49:38
+
+;$@$MOD51
+
+NAME    RSHIFT16
+
+?PR?_RShift16?RSHIFT16 SEGMENT CODE 
+        PUBLIC  _RShift16
+__SP__  DATA    081H
+        PUBLIC  _ICE_DUMMY_
+        	_ICE_DUMMY_	EQU   0
+
+
+        RSEG  ?PR?_RShift16?RSHIFT16
+?PR?_RShift16?RSHIFT16?BASE:
+; 
+; #include "common.h"
+; 
+; PUBLIC S16 RShift16( S32 n )
+; {
+;    #if _TOOL_IS == TOOL_RIDE_8051
+; 
+;    #pragma ASM
+;    mov   A,R4
+;    mov   R6,A
+;    mov   A,R5
+;    mov   R7,A
+;    ret
+;    #pragma ENDASM
+;    return;
+; 
+;    #else
+; } 
+
+        RSEG    ?PR?_RShift16?RSHIFT16
+        USING   0
+
+_RShift16 PROC
+; #pragma asm
+        mov   A,R4
+        mov   R6,A
+        mov   A,R5
+        mov   R7,A
+        ret
+; #pragma endasm
+                        ; SOURCE LINE # 19 
+                        ;$@$C_SOURCE_FILE(c:\spj1\swr\math\arith\src\basic\rshift16.c)
+                        ;$@$C_SOURCE_LINE(19)
+        RET     
+
+        ENDP
+
+; END OF _RShift16
+; ; 
+
+         END

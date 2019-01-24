@@ -1,0 +1,1 @@
+splint.exe *.c -I..\ -IC:\SPJ1\swr\tiny1\public -DTOOL_IS_SPLINT -booltype BOOLEAN > splint_results.txt
