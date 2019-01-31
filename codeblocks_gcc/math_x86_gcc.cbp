@@ -6,7 +6,7 @@
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Debug">
+			<Target title="Static-Lib">
 				<Option output="bin/Debug/math_x86_gcc" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="obj/Debug/" />
@@ -32,6 +32,16 @@
 				<Linker>
 					<Add option="-s" />
 				</Linker>
+			</Target>
+			<Target title="Unity-TDD">
+				<Option type="4" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="Console">
+				<Option output="math_x86_gcc" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
 			</Target>
 		</Build>
 		<Compiler>
@@ -779,6 +789,7 @@
 		<Unit filename="../tiny2_public/util.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
+			<Option target="Console" />
 		</Unit>
 		<Extensions>
 			<code_completion />
