@@ -1,64 +1,24 @@
-# Prerequisites
-*.d
+# unit test runners e.g run-test-ascii_num.c.
+run-*.c
+*_Runner.c
+# unit test coverage files.
+*.gcda
+*.gcno
+# gcovr results (for now)
+gcovr*.html
 
-# Object files
+# in projects
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
 *.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
+# backups from e.g Winmerge
+*.bak
+# libs
+*.a
+#copies
+* - Copy.*
 # Code::Blocks
 *.layout
 *.depend
+codeblocks_gcc/main.c
 
-*.mk
-*.pp
-*.lst
-*.xml
-*.prefs
 
-arith/e2studio_arm/*
