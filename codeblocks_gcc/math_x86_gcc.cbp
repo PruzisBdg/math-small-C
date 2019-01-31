@@ -51,6 +51,19 @@
 			<Add directory="../GenericTypes" />
 			<Add directory="../tiny2_public" />
 		</Compiler>
+		<Unit filename="../../unity_tdd/tdd_common.c">
+			<Option compilerVar="CC" />
+			<Option target="Unity-TDD" />
+		</Unit>
+		<Unit filename="../../unity_tdd/tdd_common.h">
+			<Option target="Unity-TDD" />
+		</Unit>
+		<Unit filename="../../unity_tdd/tdd_common_build.mak">
+			<Option target="Unity-TDD" />
+		</Unit>
+		<Unit filename="../../unity_tdd/tdd_common_pre_build.mak">
+			<Option target="Unity-TDD" />
+		</Unit>
 		<Unit filename="../GenericTypes/GenericTypeDefs.h" />
 		<Unit filename="../arith/src/acc/scalar_acc.c">
 			<Option compilerVar="CC" />
@@ -787,6 +800,19 @@
 		</Unit>
 		<Unit filename="../tiny2_public/systime.h" />
 		<Unit filename="../tiny2_public/util.h" />
+		<Unit filename="../unit_test/arith/float.mak">
+			<Option target="Unity-TDD" />
+		</Unit>
+		<Unit filename="../unit_test/arith/test-float.c">
+			<Option compilerVar="CC" />
+			<Option target="Unity-TDD" />
+		</Unit>
+		<Unit filename="../unit_test/math_common_build.mak">
+			<Option target="Unity-TDD" />
+		</Unit>
+		<Unit filename="../unit_test/math_common_pre.mak">
+			<Option target="Unity-TDD" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 			<Option target="Console" />
