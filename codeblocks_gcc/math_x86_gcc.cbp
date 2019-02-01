@@ -58,10 +58,6 @@
 			<Add directory="../GenericTypes" />
 			<Add directory="../tiny2_public" />
 		</Compiler>
-		<Unit filename="../../../../unity/src/unity.c">
-			<Option compilerVar="CC" />
-			<Option target="Console" />
-		</Unit>
 		<Unit filename="../../unity_tdd/tdd_common.c">
 			<Option compilerVar="CC" />
 			<Option target="Unity-TDD" />
