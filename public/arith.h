@@ -378,6 +378,8 @@ PUBLIC S16 VecU8_DevSum(U8 *v, U8 cnt);
 /* ----------------------- Floating Point Specialty --------------------------- */
 
 PUBLIC float GetPwr10Float(S16 exp);
+PUBLIC double GetPwr10Double(S16 exp);
+
 
 #endif	/* ARITH_H */
 
