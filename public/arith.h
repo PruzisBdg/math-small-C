@@ -5,17 +5,17 @@
 |  All these functions are in the 'arith' library.
 |
 |  Many of these arithmetic functions, such as addition, subtraction and clipping
-|  are basic and could be be written inline or defined as macros. However the functions 
+|  are basic and could be be written inline or defined as macros. However the functions
 |  are better in several ways:
 |
-|     - The functions are numerically guarded e.g AddTwoS16(int a, int b) will 
+|     - The functions are numerically guarded e.g AddTwoS16(int a, int b) will
 |       clip if a + b > 32767. This built-in safety is crucial for the reliable
 |       and efficient development of application-specifc numerical algorithmns.
 |       The developer is has enough to do figuring the correct algorithmns without
-|       having to worry about whether the numerical implementation is reliable.  
+|       having to worry about whether the numerical implementation is reliable.
 |
 |     - On smaller MCUs, function calls shrink the code (a lot!). This is especially
-|       true for 16 and 32bit arithmetic in 8 bit microcontrollers. The code reused 
+|       true for 16 and 32bit arithmetic in 8 bit microcontrollers. The code reused
 |       in the function body is larger than the call overhead. With many calls, the
 |       savings really add up.
 |
@@ -24,7 +24,7 @@
 |       ones the variable are chained in the registers defined by the compiler's
 |       call model. No stack or overlaid RAM. Compilers seem able to figure out
 |       small variable allocation problems, but throw up their hands at larger
-|       ones. Chaining explicitly directs a compiler to it's own efficient 
+|       ones. Chaining explicitly directs a compiler to it's own efficient
 |       pre-canned allocations.
 |
 |     - On any MCU, function calls shrink code because the compiler resolves
@@ -32,8 +32,8 @@
 |       Many functions use arguments more than once; if that function is expressed
 |       inline then the compiler may or may not optimise a repreated expression.
 |       Sometimes it isn't smart enough to do this, sometimes, as with pointers,
-|       or arguments which are themselves function calls  e.g ABS( foo() ), the 
-|       compiler must separately evaluate each instance, sometimes e.g ABS(a++), 
+|       or arguments which are themselves function calls  e.g ABS( foo() ), the
+|       compiler must separately evaluate each instance, sometimes e.g ABS(a++),
 |       multiple evaluation is legal but wrong.
 |           Whichever way, functions are shorter and safer.
 |
@@ -42,7 +42,9 @@
 #ifndef ARITH_H
 #define	ARITH_H
 
+#include "libs_support.h"
 #include "GenericTypeDefs.h"
+
 PUBLIC S16  ClipLongToInt(S32 l);
 PUBLIC S16  ClipS32toS16(S32 n);
 PUBLIC U16  ClipU32toU16(U32 n);

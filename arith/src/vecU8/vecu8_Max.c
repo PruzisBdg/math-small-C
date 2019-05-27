@@ -14,7 +14,7 @@ PUBLIC U8 VecU8_Max(U8 *v, U8 cnt)
 {
    U8 c;
    U8 maxVal;
-   
+
    for(c = 0, maxVal = 0; c < cnt; c++ )
    {
       if( v[c] > maxVal ) maxVal = v[c];
@@ -22,4 +22,4 @@ PUBLIC U8 VecU8_Max(U8 *v, U8 cnt)
    return maxVal;
 }
 
-  
+

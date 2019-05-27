@@ -21,4 +21,9 @@ gcovr*.html
 *.depend
 codeblocks_gcc/main.c
 
+e2Studio projects
+arith/e2Studio_arm
+filt/e2Studio_arm
+svec/e2Studio_arm
+fuzzy/renesas_arm
 

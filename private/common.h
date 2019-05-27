@@ -15,7 +15,8 @@ typedef  unsigned short int   U16;
 typedef  signed   short int   S16;
 typedef  unsigned long        U32;
 typedef  signed   long        S32;
-typedef  unsigned char        BOOLEAN;
+//typedef  unsigned char        BOOLEAN;
+
 typedef  unsigned char        BYTE;
 typedef  unsigned int         WORD;
 typedef  unsigned long        DWORD;

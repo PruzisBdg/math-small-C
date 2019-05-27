@@ -7,9 +7,9 @@
 |
 |
 |
-|   
 |
------------------------------------------------------------------------------ */  
+|
+----------------------------------------------------------------------------- */
 
 #ifndef MATHFUNC_H
 #define MATHFUNC_H
@@ -56,6 +56,10 @@ PUBLIC float  SimpsonFloat( float(*f)(float), float start, float intvl, S16 step
 // ---------- Misc / oddball
 
 PUBLIC U16 RewireU16(U16 CONST *map, U16 n);
+
+// --------- Powers / Surds.
+
+PUBLIC float InvSqrtFP(float n);    // Is 0x5F3759DF.
 
 
 #endif // MATHFUNC_H

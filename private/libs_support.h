@@ -13,6 +13,7 @@
 #define LIBS_SUPPORT_H
 
 #include "GenericTypeDefs.h"
+#include "bldcfg.h"
 
 // Global suspend/resume of interrupts.
 #define _BlockAllInterrupts()

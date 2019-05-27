@@ -42,7 +42,7 @@
 #define Interp2_XShift 8
 #define _L(n) ((S32)(n))
 
-#if _TARGET_IS == TARGET_LIB_LARGE || _TARGET_IS == TARGET_LIB_RIDE_THUMB2
+#if _TARGET_IS == TARGET_LIB_LARGE || _TARGET_IS == TARGET_LIB_RIDE_THUMB2 || _TARGET_IS == _TARGET_LIB_ARM
 
 PUBLIC S16 Interpolate2XY( S_XY CONST * tbl, S16 x, U8 tblPoints ) {
 

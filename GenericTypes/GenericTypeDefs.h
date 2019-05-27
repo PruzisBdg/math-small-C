@@ -22,6 +22,7 @@
 #undef FALSE
 
 typedef enum _BOOL { FALSE = 0, TRUE } BOOL;    /* Undefined size */
+
 //typedef enum _BIT { CLEAR = 0, SET } BIT;
 
 #define _ToBool(n) ((n) == 0 ? FALSE : TRUE)
