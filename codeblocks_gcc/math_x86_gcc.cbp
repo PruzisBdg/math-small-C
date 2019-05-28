@@ -809,6 +809,13 @@
 			<Option compilerVar="CC" />
 			<Option target="Unity-TDD" />
 		</Unit>
+		<Unit filename="../unit_test/func/surds.mak">
+			<Option target="Unity-TDD" />
+		</Unit>
+		<Unit filename="../unit_test/func/test-surds.c">
+			<Option compilerVar="CC" />
+			<Option target="Unity-TDD" />
+		</Unit>
 		<Unit filename="../unit_test/math_common_build.mak">
 			<Option target="Unity-TDD" />
 		</Unit>

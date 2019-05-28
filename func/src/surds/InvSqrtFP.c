@@ -2,6 +2,12 @@
 #include "common.h"
 #include "mathfunc.h"
 
+#define bool BOOL
+#define false FALSE
+#define true TRUE
+
+
+
 /*-----------------------------------------------------------------------------------------
 |
 | Fast inverse square root.
@@ -16,19 +22,42 @@
 |        log2(n) ~= n for n = [1.0 .. 2.0]
 |  The subsequent Newtons refines the initial estimate.
 |
+| This is a 'safe' function; given zero it returns zero. it's also bipolar; handles negative
+| numbers.
+|
 ------------------------------------------------------------------------------------------*/
 
 PUBLIC float InvSqrtFP(float f)
 {
-   U32 i = (0x5f3759df -                 // inverse sqrt root on log2(manstissa(f))
-              (*(U32*)&f >> 1 ));        // Read 'f' as U32
+   if(f == 0.0)
+   {
+      return 0.0;
+   }
+   else
+   {
 
-   float y = *(float*)&i;
+      bool isNeg;
 
-   // Newtons on approximate result.
-   y  = y * ( 1.5F - ( f * 0.5F * y * y ) );   // 1st iteration
-	return y;
+      if(f < 0.0)
+      {
+         f = -f;
+         isNeg = true;
+      }
+      else
+      {
+         isNeg = false;
+      }
 
+      U32 i = (0x5f3759df -                 // inverse sqrt root on log2(manstissa(f))
+                 (*(U32*)&f >> 1 ));        // Read 'f' as U32
+
+      float y = *(float*)&i;
+
+      // Newtons on approximate result.
+      y  = y * ( 1.5F - ( f * 0.5F * y * y ) );   // 1st iteration
+
+      return isNeg == true ? -y : y;
+   }
 }
 // --------------------------------- eof -------------------------------------
 
