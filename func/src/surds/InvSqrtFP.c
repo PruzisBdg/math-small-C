@@ -13,7 +13,7 @@
 | Fast inverse square root.
 |
 | This is the algorithm known as 0x5F3759DF. It works by using the mantissa of the IEEE-754
-| floating point number directly as if it were a log2N of that of the mantissa portion it
+| floating point number directly as if it were a log2N of the number which it (the mantissa)
 | actually represents.
 |        'mantissa ,_ 0x5f3759df - ( mantissa >> 1 )'
 | does
