@@ -91,6 +91,9 @@
 		</Unit>
 		<Unit filename="../arith/src/addsubtract/a_minus_b_u32.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/addsubtract/a_minus_b_u8.c">
 			<Option compilerVar="CC" />
@@ -202,6 +205,9 @@
 		</Unit>
 		<Unit filename="../arith/src/float/Get_pwr10_float.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/func/bitlog.c">
 			<Option compilerVar="CC" />
@@ -280,6 +286,9 @@
 		</Unit>
 		<Unit filename="../arith/src/minmax/clip_s16_into_S8.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/minmax/clip_u16.c">
 			<Option compilerVar="CC" />
@@ -331,6 +340,9 @@
 		</Unit>
 		<Unit filename="../arith/src/minmax/minu8.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/minmax/s32_outside_s16.c">
 			<Option compilerVar="CC" />
