@@ -97,6 +97,9 @@
 		</Unit>
 		<Unit filename="../arith/src/addsubtract/a_minus_b_u8.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/addsubtract/add_two_S8.c">
 			<Option compilerVar="CC" />
@@ -319,6 +322,9 @@
 		</Unit>
 		<Unit filename="../arith/src/minmax/maxS16.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/minmax/maxU32.c">
 			<Option compilerVar="CC" />
@@ -334,6 +340,9 @@
 		</Unit>
 		<Unit filename="../arith/src/minmax/minU16.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/minmax/minU32.c">
 			<Option compilerVar="CC" />
