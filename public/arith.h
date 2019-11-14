@@ -84,6 +84,7 @@ PUBLIC U16  AplusB_U16(U16 a, U16 b);
 PUBLIC S32  AplusBS32(S32 a, S32 b);
 PUBLIC S32  AddTwoS32(S32 a, S32 b);
 
+PUBLIC U8 RemU8U8(U8 n, U8 mod);
 
 #define AplusBU16(a,b)  AplusB_U16((a),(b))
 

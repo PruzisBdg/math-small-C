@@ -158,6 +158,11 @@
 		<Unit filename="../arith/src/basic/pcent_diff_u8.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../arith/src/basic/rem_u8_u8.c">
+			<Option compilerVar="CC" />
+			<Option target="Static-Lib" />
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="../arith/src/basic/rms_s16.c">
 			<Option compilerVar="CC" />
 		</Unit>
