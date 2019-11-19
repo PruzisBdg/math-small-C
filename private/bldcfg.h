@@ -26,6 +26,7 @@
 #define TOOL_SPLINT      9     /* Splint syntax checker              */
 #define TOOL_XC16        10    /* Microchip XC16                     */
 #define TOOL_X86_GCC     11
+#define TOOL_ARM_GCC     12
 
 /* Legacy RIDE projects, needed in assert.h. But don't redef it, if the legacy
    project already provides it.
@@ -43,6 +44,10 @@
 */
 #ifdef __TOOL_IS_X86_GCC__
     #define _TOOL_IS TOOL_X86_GCC
+#endif
+
+#ifdef __TOOL_IS_ARM_GCC__
+    #define _TOOL_IS TOOL_ARM_GCC
 #endif
 
 #ifdef TOOL_IS_RIDE_8051
