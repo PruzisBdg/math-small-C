@@ -303,6 +303,9 @@
 		</Unit>
 		<Unit filename="../arith/src/minmax/clip_u16_to_u8.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/minmax/clip_u32.c">
 			<Option compilerVar="CC" />
