@@ -312,6 +312,8 @@
 		</Unit>
 		<Unit filename="../arith/src/minmax/clip_u32_to_u16.c">
 			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
 		</Unit>
 		<Unit filename="../arith/src/minmax/clip_u8.c">
 			<Option compilerVar="CC" />
