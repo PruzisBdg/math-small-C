@@ -26,7 +26,11 @@ PUBLIC U8 BitLogU16(U16 n)
 
    while(1)
    {
-      if(n >= 32)
+      if(n == 0)
+      {
+         return 0;
+      }
+      else if(n >= 32)
       {
          n >>= 1;
          b++;
@@ -51,7 +55,11 @@ PUBLIC U16 BitLogU32(U32 n)
 
    while(1)
    {
-      if(n >= 32)
+      if(n == 0)
+      {
+         return 0;
+      }
+      else if(n >= 32)
       {
          n >>= 1;
          b++;
