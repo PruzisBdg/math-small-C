@@ -112,6 +112,9 @@
 		</Unit>
 		<Unit filename="../arith/src/addsubtract/decr_u8_was1_now0.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/addsubtract/decrement_u8_is_zero.c">
 			<Option compilerVar="CC" />
@@ -139,6 +142,9 @@
 		</Unit>
 		<Unit filename="../arith/src/basic/abss16.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/basic/inv_sum_s16.c">
 			<Option compilerVar="CC" />
@@ -252,6 +258,9 @@
 		</Unit>
 		<Unit filename="../arith/src/minmax/Clip_S16_into_U8.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/minmax/MinS16.c">
 			<Option compilerVar="CC" />
@@ -279,6 +288,9 @@
 		</Unit>
 		<Unit filename="../arith/src/minmax/clip_float_to_u16.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/minmax/clip_int.c">
 			<Option compilerVar="CC" />
@@ -356,6 +368,9 @@
 		</Unit>
 		<Unit filename="../arith/src/minmax/minU32.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/minmax/minu8.c">
 			<Option compilerVar="CC" />
@@ -374,6 +389,9 @@
 		</Unit>
 		<Unit filename="../arith/src/muldiv/AmulBdivC_S16.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Unity-TDD" />
+			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/muldiv/AmulBdivC_S16_U8_U8.c">
 			<Option compilerVar="CC" />
