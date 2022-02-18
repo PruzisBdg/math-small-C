@@ -370,7 +370,7 @@ PUBLIC BIT VecDecimator_Run(S_VecDecimator *d);
 /* ---------------------- Vectors Operations on Bytes ------------------------ */
 
 PUBLIC U8  VecU8_Max(U8 *v, U8 cnt);
-PUBLIC S16 VecU8_Sum(U8 *v, U8 cnt);
+PUBLIC S16 VecU8_Sum(U8 const *v, U8 cnt);
 PUBLIC U8  VecU8_Mean(U8 *v, U8 cnt);
 PUBLIC U8  VecU8_Dev(U8 *v, U8 cnt);
 PUBLIC S16 VecU8_DevSum(U8 *v, U8 cnt);
