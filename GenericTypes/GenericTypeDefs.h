@@ -72,6 +72,9 @@ typedef char C8;
 #define MAX_S32  ((S32)( 2147483647LL))
 #define MIN_S32  ((S32)(-2147483648LL))
 
+#define MAX_U64 0xFFFFFFFFFFFFFFFFULL
+#define MIN_U64 0
+
 #define HIGH_BYTE(n) ((U8)((n) >> 8))
 #define LOW_BYTE(n)  ((U8)((n) & 0xFF))
 
@@ -83,6 +86,9 @@ typedef char C8;
 
 #define HIGH_DWORD(n) ((U32)((n) >> 32))
 #define LOW_DWORD(n)  ((U32)((n) & 0xFFFFFFFF))
+
+#define MAX_S64 0x7FFFFFFFFFFFFFFFLL
+#define MIN_S64 (-MAX_S64-1)
 
 
 /* 24-bit type only available on C18 */

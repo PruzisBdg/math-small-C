@@ -56,6 +56,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>sig</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>svec</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -416,6 +421,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/public/math_common.h</locationURI>
 		</link>
 		<link>
+			<name>public/math_sig.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/public/math_sig.h</locationURI>
+		</link>
+		<link>
 			<name>public/mathfunc.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/public/mathfunc.h</locationURI>
@@ -439,6 +449,11 @@
 			<name>public/vec.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/public/vec.h</locationURI>
+		</link>
+		<link>
+			<name>sig/resample.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/sig/src/resample.c</locationURI>
 		</link>
 		<link>
 			<name>svec/FillBytes.c</name>

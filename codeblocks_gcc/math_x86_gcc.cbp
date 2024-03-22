@@ -706,12 +706,16 @@
 		<Unit filename="../public/iirfilt.h" />
 		<Unit filename="../public/iirfilt_fp.h" />
 		<Unit filename="../public/math_common.h" />
+		<Unit filename="../public/math_sig.h" />
 		<Unit filename="../public/mathfunc.h" />
 		<Unit filename="../public/pid_servo.h" />
 		<Unit filename="../public/ratelimit.h" />
 		<Unit filename="../public/sine_osc.h" />
 		<Unit filename="../public/vec.h" />
 		<Unit filename="../sig/src/ratelimit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sig/src/resample.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../sig/src/sine_osc.c">
@@ -871,14 +875,18 @@
 		<Unit filename="../unit_test/math_common_pre.mak">
 			<Option target="Unity-TDD" />
 		</Unit>
+		<Unit filename="../unit_test/sig/sig.mak">
+			<Option target="Unity-TDD" />
+		</Unit>
+		<Unit filename="../unit_test/sig/test-sig.c">
+			<Option compilerVar="CC" />
+			<Option target="Unity-TDD" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 			<Option target="Console" />
 		</Unit>
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

@@ -2,12 +2,6 @@
 #include "common.h"
 #include "mathfunc.h"
 
-#define bool BOOL
-#define false FALSE
-#define true TRUE
-
-
-
 /*-----------------------------------------------------------------------------------------
 |
 | Fast inverse square root.

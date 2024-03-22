@@ -154,6 +154,8 @@ typedef union { WORD w; int i; BYTE b[2]; } BYTES;
 #define _BOOL(n)  (((n)==0)?FALSE:TRUE)
 #define _NotBOOL(n)  (((n)==0)?TRUE:FALSE)
 
+#include <stdbool.h>
+
 
 #endif // DET_COMMON_H
 
