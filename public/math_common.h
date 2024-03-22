@@ -1,6 +1,7 @@
 #ifndef COMMON_H
 #define COMMON_H
 
+#include "bldcfg.h"
 #include "GenericTypeDefs.h"
 
 #define RAM_IS

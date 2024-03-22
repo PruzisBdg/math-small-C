@@ -16,7 +16,7 @@
 
 PUBLIC void FIR_SetCoffs( S_FIR *f, S16 CONST *coffs ) 
 {
-   f->coffs = coffs;
+   f->cfg.coffs = coffs;
 }
 
 // ----------------------------------- eof ----------------------------------------- 

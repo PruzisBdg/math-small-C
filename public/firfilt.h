@@ -25,14 +25,31 @@
    #define _DECL(ret)   PUBLIC ret
 #endif
 
-
-#if _TOOL_IS == TOOL_RIDE_8051
-   #define _USE_ARRAY_INDICES
-#elif _TOOL_IS == TOOL_RIDEARM || _TOOL_IS == TOOL_CC430
+#ifndef _TOOL_IS
+   #error "_TOOL_IS not defined for _USE_ARRAY_INDICES in firfilt.h"
 #else
-   #error "Tool not defined for _USE_ARRAY_INDICES in firfilt.h"   
+   #if _TOOL_IS == TOOL_RIDE_8051 || _TOOL_IS == TOOL_CC430
+      #define _USE_ARRAY_INDICES
+   #endif
 #endif
 
+// To tune speed vs size & safety
+typedef struct {
+   U8       checkOverrange :1,   // Check (32bit) for overrange (slower)
+            noOutClip      :1;   // Do not clip output to S16 (faster)
+} S_FIRFlags;
+
+// Buffer may be S16[] to accumulate input samples, or S32[], to accumulate products
+typedef union {S16 *_s16; S32 *_s32; } U_pS16pS32;
+
+typedef struct    // Used by FIR_MakeB(); may tune operation with flags
+{
+   U_pS16pS32  buf;
+   S16 CONST   *coffs;
+   U8          taps,
+               rShift;
+   S_FIRFlags  flags;
+} S_FIRCfg;
 
 #ifdef _USE_ARRAY_INDICES   
 
@@ -41,11 +58,8 @@
 typedef struct 
 {
    U8          put,        /* next put                                     */
-               end,        /* data buffer end                              */
-               taps;       /* number of taps, should equal number of coffs */
-   S16         *buf;       /* data buffer start                            */
-   S16 CONST   *coffs;     /* FIR coffs, are in ROM                        */
-   U8          rShift;     /* Output right-shift                           */
+               end;        /* data buffer end                              */
+   S_FIRCfg    cfg;
 } S_FIR;
 
 #else
@@ -55,19 +69,17 @@ typedef struct
 typedef struct 
 {
    S16       *put,       /* next put                                     */
-             *buf,       /* data buffer start                            */
              *end;       /* data buffer end                              */
-   S16 CONST *coffs;     /* FIR coffs                                    */
-   U8        taps;       /* number of taps, should equal number of coffs */
-   U8        rShift;     /* Output right-shift                           */
+   S_FIRCfg   cfg;
 } S_FIR;
 
 #endif
 
 
-#define _FIR_Coff(n) ((S16)(CLIP( (32768.0 * (n)), MIN_INT, MAX_INT )))
+#define _FIR_Coff(n) ((S16)(CLIP( (32768.0F * (n)), MIN_INT, MAX_INT )))
 
 _DECL(void) FIR_Make    ( S_FIR *f,  S16 *buf, S16 CONST *coffs, U8 taps, U8 rShift );
+_DECL(void) FIR_MakeB   ( S_FIR *f,  S_FIRCfg CONST *cfg );
 #define     FIR_Destroy(f)                /* no malloc() so nothing to do */
 _DECL(void) FIR_Reset   ( S_FIR *f,  S16 initValue           );
 _DECL(S16)  FIR_Run     ( S_FIR *f,  S16 i                   );
@@ -125,11 +137,8 @@ PUBLIC float FIRFP_Run( S_FIRFP * f, float i );
 
 typedef struct
 {
-   S16       *firBuf;      // FIR filter buffer       
-   S16 CONST *firCoffs;    // FIR filter coefficients
-   U8        taps,         // FIR filter taps (number of coffs)
-             rShift,       // FIR filter output scaling, as a right-shift
-             dec;          // decimation ratio
+   S_FIRCfg  fir;    // FIR filter, post-decimation.
+   U8        dec;    // Decimation ratio.
 } S_DecFIRCfg;
 
 typedef union
@@ -151,6 +160,7 @@ typedef struct
 PUBLIC void DecFIR_Make( S_DecFIR *f, S_DecFIRCfg CONST *cfg);
 PUBLIC void DecFIR_Flush( S_DecFIR *f );
 PUBLIC BIT DecFIR_Run( S_DecFIR *f, S16 *out, S16 in);
+PUBLIC BIT DecFIR_RunS( S_DecFIR *f, S16 *out, S16 in);
 
 /* ------------------------------------------------------------------------------
 |

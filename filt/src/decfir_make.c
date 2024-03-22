@@ -23,7 +23,7 @@ PRIVATE U8 getExactPowerOfTwo(U8 n)
 
 PUBLIC void DecFIR_Make( S_DecFIR *f, S_DecFIRCfg CONST *cfg)
 {
-   FIR_Make(&f->fir, cfg->firBuf, cfg->firCoffs, cfg->taps, cfg->rShift);
+   FIR_MakeB(&f->fir, &cfg->fir);
    f->dec = cfg->dec;
    f->rShift = getExactPowerOfTwo(f->dec);
    DecFIR_Flush(f);

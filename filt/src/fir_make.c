@@ -12,9 +12,9 @@
 |                'taps'  - number of filter taps
 |
 |  RETURNS:
-|     
 |
-|	DATE		AUTHOR		DESCRIPTION OF CHANGE 
+|
+|	DATE		AUTHOR		DESCRIPTION OF CHANGE
 |	--------		-------------		-------------------------------------
 |
 -------------------------------------------------------------------------------------------------*/
@@ -23,15 +23,19 @@
 
 PUBLIC void FIR_Make( S_FIR *f, S16 *buf, S16 CONST *coffs, U8 taps, U8 rShift )
 {
-   f->coffs = coffs;
-   f->taps = taps;
-   f->buf = buf;
-   f->rShift = rShift;
-   
+   f->cfg.coffs = coffs;
+   f->cfg.taps = taps;
+   f->cfg.buf._s16 = buf;
+   f->cfg.rShift = rShift;
+
+
+   // Run-configuration start cleared.
+   f->cfg.flags = (S_FIRFlags){0};
+
    #ifdef _USE_ARRAY_INDICES
    f->end = taps - 1;
    #else
-   f->end = f->buf + taps - 1;
+   f->end = f->cfg.buf._s16 + taps - 1;
    #endif
 
    FIR_Reset(f, 0);
@@ -39,4 +43,4 @@ PUBLIC void FIR_Make( S_FIR *f, S16 *buf, S16 CONST *coffs, U8 taps, U8 rShift )
 
 
 
-// ---------------------------------- eof ------------------------------------------ 
+// ---------------------------------- eof ------------------------------------------

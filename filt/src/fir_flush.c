@@ -15,7 +15,7 @@
 
 PUBLIC void FIR_Flush( S_FIR *f, S16 fillValue )
 {
-   FillIntsU8( f->buf, fillValue, f->taps );
+   FillIntsU8( f->cfg.buf._s16, fillValue, f->cfg.taps );
 }
 
 // ---------------------------------- eof -------------------------------------------------------
