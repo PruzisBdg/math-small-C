@@ -17,12 +17,13 @@ typedef struct {
    S32 acc;                // Accumulates incoming samples & frac tions thereof.
    U8  bucket,            // Fill this with (divisible) token of incoming samples...
        inRate, outRate;
-} S_DownSampleS16;
+} S_DownSmplS16;
 
-PUBLIC bool DownSampleS16_Init(S_DownSampleS16 *d, S_ResampleRatesU8 const *rr);
-PUBLIC bool DownSampleS16_SetRates(S_DownSampleS16 *d, S_ResampleRatesU8 const *rr);
-PUBLIC bool DownSampleS16_Run(S_DownSampleS16 *d, S32 *out, S16 in);
-PUBLIC bool DownSampleS16_Flush(S_DownSampleS16 *d, S32 *out);
+PUBLIC bool DownSmplS16_Init(S_DownSmplS16 *d, S_ResampleRatesU8 const *rr);
+PUBLIC bool DownSmplS16_SetRates(S_DownSmplS16 *d, S_ResampleRatesU8 const *rr);
+PUBLIC bool DownSmplS16_SetOutRate(S_DownSmplS16 *d, U8 outRate);
+PUBLIC bool DownSmplS16_Run(S_DownSmplS16 *d, S32 *out, S16 in);
+PUBLIC bool DownSmplS16_Flush(S_DownSmplS16 *d, S32 *out);
 
 #endif // MATHSIG_H
 
