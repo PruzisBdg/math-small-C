@@ -26,7 +26,7 @@ PUBLIC void DecFIR_Make( S_DecFIR *f, S_DecFIRCfg CONST *cfg)
    FIR_MakeB(&f->fir, &cfg->fir);
    f->dec = cfg->dec;
    f->rShift = getExactPowerOfTwo(f->dec);
-   DecFIR_Flush(f);
+   DecFIR_Flush(f, 0);
 }
 
 // ------------------------------ eof -----------------------------------------

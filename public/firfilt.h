@@ -158,7 +158,7 @@ typedef struct
 
 
 PUBLIC void DecFIR_Make( S_DecFIR *f, S_DecFIRCfg CONST *cfg);
-PUBLIC void DecFIR_Flush( S_DecFIR *f );
+PUBLIC S16 DecFIR_Flush( S_DecFIR *f, S16 fillValue );
 PUBLIC BIT DecFIR_Run( S_DecFIR *f, S16 *out, S16 in);
 PUBLIC BIT DecFIR_RunS( S_DecFIR *f, S16 *out, S16 in);
 
