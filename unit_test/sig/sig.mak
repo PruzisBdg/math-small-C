@@ -5,10 +5,10 @@
 # ---------------------------------------------------------------------
 
 # Code folder, test folder and test file all get same name.
-TARGET_BASE = float
-TARGET_BASE_DIR = arith/src/$(TARGET_BASE)
+TARGET_BASE = sig
+TARGET_BASE_DIR = sig/src
 
-# For arith/src/float the 'C" files are 2-up and over from the Test Harness.
+# For arith/src/sig the 'C' files are 2-up and over from the Test Harness.
 # Override default, which is 1-up an dover.
 TO_PROJ_ROOT = ..\..
 
@@ -20,8 +20,7 @@ CFLAGS := $(CFLAGS) -DUNITY_INCLUDE_DOUBLE
 
 # The complete files list
 SRC_FILES := $(SRC_FILES) $(UNITYDIR)unity.c \
-								$(SRCDIR)Get_pwr10_float.c \
-								$(SRCDIR)Get_pwr10_double.c \
+								$(SRCDIR)resample.c \
 								$(HARNESS_TESTS_SRC) $(HARNESS_MAIN_SRC) $(LIBS)
 
 # Clean and build

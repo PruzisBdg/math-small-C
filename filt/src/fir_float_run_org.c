@@ -3,12 +3,17 @@
 #include "arith.h"
 #include "firfilt.h"
 
-#if _TOOL_IS == TOOL_RIDE_8051
-   #define _USE_ARRAY_INDICES
+#ifndef _TOOL_IS
+   #error "_TOOL_IS is not defined"
 #else
-   #error "Tool not defined"   
+   #if _TOOL_IS == TOOL_RIDE_8051
+      #define _USE_ARRAY_INDICES
+   #else
+      // Use pointers
+   #endif
 #endif
 
+#if 0
 #ifdef _USE_ARRAY_INDICES   
 
 // 'put' and 'end' are array indices, most efficient with 8 bit MCU's
@@ -30,13 +35,13 @@ typedef struct
 {
    float *put,       /* next put                                     */
          *buf,       /* data buffer start                            */
-         *end,       /* data buffer end                              */
-         *coffs;     /* FIR coffs                                    */
+         *end;       /* data buffer end                              */
+   float CONST *coffs;     /* FIR coffs                                    */
    U8    taps;       /* number of taps, should equal number of coffs */
 } S_FIRFP;
 
 #endif
-
+#endif
 
 /*-------------------------------------------------------------------------------------------------
 |

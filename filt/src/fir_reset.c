@@ -14,15 +14,15 @@
 
 #include "firfilt.h"
 
-PUBLIC void FIR_Reset( S_FIR *f, S16 initValue ) 
+PUBLIC void FIR_Reset( S_FIR *f, S16 initValue )
 {
    #ifdef _USE_ARRAY_INDICES
    f->put = 0;
    #else
-   f->put = f->buf;
+   f->put = f->cfg.buf._s16;
    #endif
-   
+
    FIR_Flush(f, initValue);
 }
 
-// ----------------------------------- eof -------------------------------------------- 
+// ----------------------------------- eof --------------------------------------------

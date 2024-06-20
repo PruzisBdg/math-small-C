@@ -100,6 +100,10 @@ PUBLIC void iir2_Init( iir2_S _IIR_Mem *f, S16 CONST *coffs, U8 coffsScalePwr2 )
 |
 -------------------------------------------------------------------------------------------------*/
 
+#ifndef _TOOL_IS
+   #error "_TOOL_IS must be defined"
+#endif
+
 // This formulation faster and more compact for 8051 and other MCUs with
 // small register sets.
 #if _TOOL_IS == TOOL_RIDE_8051

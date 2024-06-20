@@ -4,7 +4,7 @@
 |
 |  Run filter, using a 32bit accumulator See 'DecFIR_RunS()' for a 16 bit accumulator.
 |
-|  Note that 'out' is modified only when the decimation rools over.
+|  Note that 'out' is modified only when the decimation rolls over.
 |
 --------------------------------------------------------------------------------*/
 

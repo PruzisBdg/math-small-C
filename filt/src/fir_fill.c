@@ -14,8 +14,7 @@
 
 PUBLIC void FIR_Fill ( S_FIR *f, S16 const *fillVec ) 
 {
-
-   CopyIntsU8( f->buf, fillVec, f->taps );
+   CopyIntsU8( f->cfg.buf._s16, fillVec, f->cfg.taps );
    f->put = f->end;       /* 1st sample, in time-order, is at the end of the buffer */
 }
 

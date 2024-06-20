@@ -31,6 +31,10 @@ typedef enum _BOOL { FALSE = 0, TRUE } BOOL;    /* Undefined size */
 #define PROTECTED
 #define PRIVATE static
 
+typedef unsigned long long U64;
+typedef signed long long S64;
+
+
 typedef signed short int S16;                      // Succinct versions of the above
 typedef signed long int S32;
 #define _S16(n)  ((S16)(n))
@@ -54,6 +58,8 @@ typedef char C8;
 #define MAX_U8 0xFF
 #define MIN_S8 (-128)
 #define MAX_S8 127
+#define MIN_C8 0
+#define MAX_C8 127
 
 #define MIN_U16 0
 #define MAX_U16 0xFFFF
@@ -66,6 +72,9 @@ typedef char C8;
 #define MAX_S32  ((S32)( 2147483647LL))
 #define MIN_S32  ((S32)(-2147483648LL))
 
+#define MAX_U64 0xFFFFFFFFFFFFFFFFULL
+#define MIN_U64 0
+
 #define HIGH_BYTE(n) ((U8)((n) >> 8))
 #define LOW_BYTE(n)  ((U8)((n) & 0xFF))
 
@@ -77,6 +86,9 @@ typedef char C8;
 
 #define HIGH_DWORD(n) ((U32)((n) >> 32))
 #define LOW_DWORD(n)  ((U32)((n) & 0xFFFFFFFF))
+
+#define MAX_S64 0x7FFFFFFFFFFFFFFFLL
+#define MIN_S64 (-MAX_S64-1)
 
 
 /* 24-bit type only available on C18 */
