@@ -43,7 +43,7 @@
 #define	ARITH_H
 
 #include "libs_support.h"
-#include "GenericTypeDefs.h"
+#include "spj_stdint.h"
 
 PUBLIC S16  ClipLongToInt(S32 l);
 PUBLIC S16  ClipS32toS16(S32 n);

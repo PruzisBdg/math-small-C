@@ -4,7 +4,7 @@
 |
 |--------------------------------------------------------------------------*/
 
-#include "GenericTypeDefs.h"
+#include "spj_stdint.h"
 #include "arith.h"
 
 PUBLIC void AccDev_Clear(S_AccDev *a)
@@ -13,5 +13,5 @@ PUBLIC void AccDev_Clear(S_AccDev *a)
    a->cnt = 0;
    a->devSum = 0;
 }
- 
-// -------------------------------- eof ------------------------------------- 
+
+// -------------------------------- eof -------------------------------------

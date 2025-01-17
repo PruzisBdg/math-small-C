@@ -2,7 +2,7 @@
 #define MATHSIG_H
 
 #include <stdbool.h>
-#include "GenericTypeDefs.h"
+#include "spj_stdint.h"
 
 /* Essential non-normalising Downsampler.
 

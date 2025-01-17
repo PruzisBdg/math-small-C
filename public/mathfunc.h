@@ -15,7 +15,7 @@
 #define MATHFUNC_H
 
 //#include "libs_support.h"
-#include "GenericTypeDefs.h"
+#include "spj_stdint.h"
 
 
 // Trig definitions

@@ -1,8 +1,8 @@
 
-#include "GenericTypeDefs.h"
+#include "spj_stdint.h"
 #include "arith.h"
 
-/* Return the bit position (0-15) of the msb of 'n' . 
+/* Return the bit position (0-15) of the msb of 'n' .
 
    If n == 0 return 0 (the same answer as for n = 0x0001)
 */
