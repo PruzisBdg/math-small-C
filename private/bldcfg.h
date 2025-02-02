@@ -217,7 +217,6 @@
    #define XDATA
    #define rXDATA
    #define DATA
-   #define BIT       U8          // no Bit variables in HC08
 
    // No generic pointer support
    #define GENERIC
