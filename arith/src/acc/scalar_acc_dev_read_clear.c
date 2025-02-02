@@ -4,7 +4,7 @@
 |
 |--------------------------------------------------------------------------*/
 
-#include "GenericTypeDefs.h"
+#include "spj_stdint.h"
 #include "arith.h"
 
 PUBLIC S16 AccDev_ReadAndClear(S_AccDev *a)
@@ -14,5 +14,5 @@ PUBLIC S16 AccDev_ReadAndClear(S_AccDev *a)
    AccDev_Clear(a);
    return rtn;
 }
- 
- // -------------------------------- eof ------------------------------------- 
+
+ // -------------------------------- eof -------------------------------------

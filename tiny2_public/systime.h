@@ -21,7 +21,7 @@
 #ifndef SYSTIME_H
 #define SYSTIME_H
 
-#include "GenericTypeDefs.h"
+#include "spj_stdint.h"
 #include "libs_support.h"
 
 /* For an embedded target _CPU_IS and _COMPILER_IS should be defined (in

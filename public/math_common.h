@@ -1,8 +1,8 @@
-#ifndef COMMON_H
-#define COMMON_H
+#ifndef MATH_COMMON_H
+#define MATH_COMMON_H
 
 #include "bldcfg.h"
-#include "GenericTypeDefs.h"
+#include "spj_stdint.h"
 
 #define RAM_IS
 #define rIDATA
@@ -35,4 +35,4 @@
 
 #define CLIP(n, min, max) (((n)<(min))?(min):(((n)>(max))?(max):(n)))
 
-#endif // COMMON_H
+#endif // MATH_COMMON_H

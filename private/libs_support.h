@@ -12,7 +12,7 @@
 #ifndef LIBS_SUPPORT_H
 #define LIBS_SUPPORT_H
 
-#include "GenericTypeDefs.h"
+#include "spj_stdint.h"
 #include "bldcfg.h"
 
 // Global suspend/resume of interrupts.

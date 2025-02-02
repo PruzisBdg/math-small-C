@@ -26,7 +26,7 @@ PUBLIC void FIR_MakeB( S_FIR *f,  S_FIRCfg CONST *cfg )
    #ifdef _USE_ARRAY_INDICES
    f->end = f->cfg.taps - 1;
    #else
-   f->end = f->cfg.buf + f->cfg.taps - 1;
+   f->end = f->cfg.buf._s16 + f->cfg.taps - 1;
    #endif
 
    FIR_Reset(f, 0);

@@ -6,16 +6,13 @@
 
 #include "bldcfg.h"
 
+/* ------------------------------ Sized Types ----------------------------------
 
-/* ----------------------- Basic Types -------------------------- */
+   U8, S16 etc, from <stdint.h> or, for any pre-C99 tools, these are defined
+   directly from Basic Types.
+*/
+#include "spj_stdint.h"
 
-typedef  unsigned char        U8;
-typedef  signed   char        S8;
-typedef  unsigned short int   U16;
-typedef  signed   short int   S16;
-typedef  unsigned long        U32;
-typedef  signed   long        S32;
-//typedef  unsigned char        BOOLEAN;
 
 typedef  unsigned char        BYTE;
 typedef  unsigned int         WORD;
@@ -109,7 +106,7 @@ typedef union { WORD w; int i; BYTE b[2]; } BYTES;
 #define MEAN(a,b) (((a)+(b))/2)
 
 #define CLIP(n, min, max) (((n)<(min))?(min):(((n)>(max))?(max):(n)))
-#define RECORDS_IN(a)  (sizeof(a)/sizeof((a)[0]))
+//#define RECORDS_IN(a)  (sizeof(a)/sizeof((a)[0]))
 #define INSIDE_LIMITS(n, min, max)   (((n) > (min)) && ((n) < (max)))
 #define OUTSIDE_LIMITS(n, min, max)   (((n) < (min)) || ((n) > (max)))
 
@@ -147,8 +144,8 @@ typedef union { WORD w; int i; BYTE b[2]; } BYTES;
 
 /* ------------------------ Boolean ------------------------------------ */
 
-#define TRUE     1
-#define FALSE    0
+//#define TRUE     1
+//#define FALSE    0
 
 /* Numeric-to-Boolean conversion */
 #define _BOOL(n)  (((n)==0)?FALSE:TRUE)

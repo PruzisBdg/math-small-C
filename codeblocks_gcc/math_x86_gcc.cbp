@@ -48,7 +48,8 @@
 			<Add option="-D__TOOL_IS_X86_GCC__" />
 			<Add directory="../private" />
 			<Add directory="../public" />
-			<Add directory="../GenericTypes" />
+			<Add directory="../../libs_common/public" />
+			<Add directory="../../libs_common/libs_only" />
 			<Add directory="../tiny2_public" />
 		</Compiler>
 		<Unit filename="../../unity_tdd/tdd_common.c">
