@@ -31,6 +31,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>arith</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>filt</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -69,6 +74,11 @@
 			<name>GenericTypes/GenericTypeDefs.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/GenericTypes/GenericTypeDefs.h</locationURI>
+		</link>
+		<link>
+			<name>arith/acc</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
 			<name>filt/alpha_beta_tracker.c</name>
@@ -674,6 +684,36 @@
 			<name>svec/vec_write1.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/svec/src/vec_write1.c</locationURI>
+		</link>
+		<link>
+			<name>arith/acc/scalar_acc.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/arith/src/acc/scalar_acc.c</locationURI>
+		</link>
+		<link>
+			<name>arith/acc/scalar_acc_dev.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/arith/src/acc/scalar_acc_dev.c</locationURI>
+		</link>
+		<link>
+			<name>arith/acc/scalar_acc_dev_clear.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/arith/src/acc/scalar_acc_dev_clear.c</locationURI>
+		</link>
+		<link>
+			<name>arith/acc/scalar_acc_dev_dev_sum.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/arith/src/acc/scalar_acc_dev_dev_sum.c</locationURI>
+		</link>
+		<link>
+			<name>arith/acc/scalar_acc_dev_mean_dev.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/arith/src/acc/scalar_acc_dev_mean_dev.c</locationURI>
+		</link>
+		<link>
+			<name>arith/acc/scalar_acc_dev_read_clear.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/arith/src/acc/scalar_acc_dev_read_clear.c</locationURI>
 		</link>
 		<link>
 			<name>func/intdiff/integrate_simpson_double.c</name>
