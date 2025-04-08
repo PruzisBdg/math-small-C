@@ -542,6 +542,9 @@
 		<Unit filename="../filt/src/fir_make.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../filt/src/fir_make_b.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="../filt/src/fir_reset.c">
 			<Option compilerVar="CC" />
 		</Unit>
