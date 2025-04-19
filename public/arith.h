@@ -94,6 +94,7 @@ PUBLIC U8   AminusBU8(U8 a, U8 b);
 PUBLIC U16  AminusBU16(U16 a, U16 b);
 PUBLIC S16  AminusBS16(S16 a, S16 b);
 PUBLIC S16  AminusBU16ToS16(U16 a, U16 b);
+PUBLIC U32  AminusBU32(U32 a, U32 b);
 
 PUBLIC BIT DecrU8_NowZero(U8 * a);
 PUBLIC BIT DecrU8_Was1_NowZero(U8 * a);
@@ -374,6 +375,7 @@ PUBLIC S16 VecU8_Sum(U8 const *v, U8 cnt);
 PUBLIC U8  VecU8_Mean(U8 *v, U8 cnt);
 PUBLIC U8  VecU8_Dev(U8 *v, U8 cnt);
 PUBLIC S16 VecU8_DevSum(U8 *v, U8 cnt);
+PUBLIC bool VecU8_Equal(U8 const *a, U8 const *b, U8 cnt);
 
 
 /* ----------------------- Floating Point Specialty --------------------------- */
