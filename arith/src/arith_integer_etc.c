@@ -91,6 +91,18 @@ PUBLIC S16 AmulBdivC_S16_U8_U8(S16 a, U8 b, U8 c)
 
 }
 
+PUBLIC U16 AmulBdivC_U16_rnd(U16 a, U16 b, U16 c)
+{
+    return
+        c == 0
+            ? (a == 0 || b ==0
+                ? 0
+                : MAX_U16)
+            : ClipU32toU16( ((a * (U32)b) + (c/2)) / c);
+}
+
+
+
 PUBLIC U16 IncrU16(U16 *n)
 {
    if(*n < MAX_U16)
@@ -120,6 +132,16 @@ PUBLIC U32 U32plusS16(U32 a, S16 b)
 			: AminusBU32(a, -b);
 }
 
+PUBLIC S16 ClipS16(S16 n, S16 min, S16 max)
+{
+    return
+        min > max                                       // Limits are crossed?
+            ? ((min >> 1) + (max >> 1))                 // then return mean of limits
+            : (n > max ? max : (n < min ? min : n));    // else clip 'n' to limits.
+}
+
+
+PUBLIC U32 SqU16(U16 n) { return (U32)n * n; }
 
 
 /* ----------------------------- SqrtU32 ---------------------------------------
