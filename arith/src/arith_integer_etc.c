@@ -135,6 +135,10 @@ PUBLIC U32 U32plusS16(U32 a, S16 b)
 PUBLIC U8 AplusBU8(U8 a, U8 b)
     { return a + (U16)b > MAX_U8 ? MAX_U8 : a + b; }
 
+PUBLIC U16 AplusB_U16(U16 a, U16 b)
+    { return ClipU32toU16(a + (U32)b); }
+
+
 PUBLIC S16 ClipS16(S16 n, S16 min, S16 max)
 {
     return
