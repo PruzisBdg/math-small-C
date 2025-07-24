@@ -53,6 +53,7 @@ PUBLIC U8   ClipU16toU8(U16 n);
 PUBLIC S8   ClipS16toS8(S16 n);
 
 PUBLIC S8   MinS8(S8 a, S8 b);
+PUBLIC S16  MinS16(S16 a, S16 b);
 PUBLIC S8   MaxS8(S8 a, S8 b);
 PUBLIC S8   MaxS8(S8 a, S8 b);
 PUBLIC S16  MinS16(S16 a, S16 b);
@@ -62,6 +63,7 @@ PUBLIC S8   ClipS8(S8 n, S8 min, S8 max);
 PUBLIC U8   ClipU8(U8 n, U8 min, U8 max);
 PUBLIC U16  ClipU16(U16 n, U16 min, U16 max);
 PUBLIC S16  ClipS16(S16 n, S16 min, S16 max);       PUBLIC S16 ClipInt(S16 n, S16 min, S16 max);
+PUBLIC S32  ClipS32(S32 n, S32 min, S32 max);
 PUBLIC S32  ClipS32(S32 n, S32 min, S32 max);
 PUBLIC S16  ClipS32_S16Limits(S32 n, S16 min, S16 max);
 PUBLIC U8   MinU8(U8 a, U8 b);
@@ -78,6 +80,7 @@ PUBLIC BIT  Inside_S16(S16 a, S16 min, S16 max); PUBLIC BIT InsideLimitsS16(S16 
 PUBLIC U8   AplusBU8(U8 a, U8 b);
 PUBLIC S16  AplusBS16(S16 a, S16 b);
 PUBLIC S16  AddTwoS16(S16 a, S16 b);
+PUBLIC U16  U16plusS16_toU16(U16 a, S16 b);
 
 PUBLIC U32  AplusBU32(U32 a, U32 b);
 PUBLIC U16  AplusB_U16(U16 a, U16 b);

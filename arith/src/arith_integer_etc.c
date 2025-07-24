@@ -34,6 +34,14 @@ PUBLIC U32 AplusBU32(U32 a, U32 b)
             : a + b;
 }
 
+PUBLIC S32 ClipS32(S32 n, S32 min, S32 max)
+{
+    return
+        min > max                                       // Limits are crossed?
+            ? ((min >> 1) + (max >> 1))                 // then return mean of limits
+            : (n > max ? max : (n < min ? min : n));    // else clip 'n' to limits.
+}
+
 PUBLIC U8 ClipU16toU8(U16 n)
     { return n > MAX_U8 ? MAX_U8 : n; }
 
@@ -57,6 +65,9 @@ PUBLIC U16 AmulBdivC_U16(U16 a, U16 b, U16 c)
 }
 
 PUBLIC U8 MinU8(U8 a, U8 b)
+    { return a < b ? a : b; }
+
+PUBLIC S16 MinS16(S16 a, S16 b)
     { return a < b ? a : b; }
 
 PUBLIC U16 AminusBU16(U16 a, U16 b)
@@ -189,6 +200,9 @@ PUBLIC U8 U8PtrDiff_toU8(U8 const *a, U8 const *b) {
             ? 0xFF
             : a - b); }
 
+
+PUBLIC U16 U16plusS16_toU16(U16 a, S16 b)
+   { return ClipS32((S32)a + b, MIN_U16, MAX_U16); }
 
 
 
