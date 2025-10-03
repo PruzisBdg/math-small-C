@@ -96,9 +96,6 @@
 		</Unit>
 		<Unit filename="../arith/src/addsubtract/a_minus_b_u8.c">
 			<Option compilerVar="CC" />
-			<Option target="Release" />
-			<Option target="Unity-TDD" />
-			<Option target="Console" />
 		</Unit>
 		<Unit filename="../arith/src/addsubtract/add_two_S8.c">
 			<Option compilerVar="CC" />
