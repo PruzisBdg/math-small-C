@@ -79,10 +79,6 @@ PUBLIC U16 ClipU32toU16(U32 n)
 PUBLIC S16 AplusBS16(S16 a, S16 b)
     { return ClipS32toS16(a + (S32)b); }
 
-PUBLIC U8 AminusBU8(U8 a, U8 b)
-    { return a > b ? a - b : 0; }
-
-
 
 PUBLIC S16 AmulBdivC_S16_U8_U8(S16 a, U8 b, U8 c)
 {

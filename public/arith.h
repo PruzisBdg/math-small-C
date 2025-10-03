@@ -107,6 +107,7 @@ PUBLIC BOOL SignEqualsS16(S16 a, S16 b);
 PUBLIC S16  AbsS16(S16 n);
 
 PUBLIC S32  MulS16(S16 a, S16 b);
+PUBLIC S64  MulS32(S32 a, S32 b);
 #define    _MulS16ToS16(a,b)  ClipS32toS16((a) * (S32)(b))
 PUBLIC S16 MulS16ToS16(S16 a, S16 b);
 PUBLIC S16  AmulBdivC_S16(S16 a, S16 b, S16 c);
