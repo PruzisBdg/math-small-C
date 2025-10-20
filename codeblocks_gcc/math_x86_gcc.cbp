@@ -431,6 +431,9 @@
 		<Unit filename="../arith/src/sorts/median3_s16.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../arith/src/sorts/minmax_rank_u16.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="../arith/src/sorts/rankfilt.c">
 			<Option compilerVar="CC" />
 		</Unit>

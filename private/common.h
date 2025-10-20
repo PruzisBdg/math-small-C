@@ -84,8 +84,9 @@ typedef union { WORD w; int i; BYTE b[2]; } BYTES;
 #define PUBLIC
 #define PRIVATE static
 
-
-//#define NULL ((void *) 0U)
+#ifndef NULL
+#define NULL ((void *) 0U)
+#endif
 
 /* ------------------- Token Pasting --------------------------------------
 

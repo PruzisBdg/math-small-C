@@ -192,6 +192,10 @@ PUBLIC void BubbleSortU8( U8 *v, U8 cnt, U8 ascending );
 
 PUBLIC S16 Median3_S16(S16 a, S16 b, S16 c);
 
+typedef struct {U16 *ns; U16 cnt;} S_BufU16;
+PUBLIC U16 MaxRank_U16(S_BufU16 const *ranks, U16 a, U16 b);
+PUBLIC U16 MinRank_U16(S_BufU16 const *ranks, U16 a, U16 b);
+
 PUBLIC U8 SigmaSqU8(U8 n);
 
 typedef struct {
