@@ -2,21 +2,6 @@
 |
 |                  1st-order IIR filters
 |
-|
-|
-|
-|
-|
-|
-|      Rev 1.2   Apr 01 2011 15:18:34   spruzina
-|   Adds IIR1_Read() to read a filter without cranking it.
-|
-|      Rev 1.1   Aug 20 2009 08:32:32   spruzina
-|   Added 'float' versions of the IIR coefficient macros, for range-checkin. e.g '_IIR1_HztoCoff_float()'.
-|
-|      Rev 1.0   May 19 2009 12:56:26   spruzina
-|   Initial revision.
-|
 |--------------------------------------------------------------------------*/
 
 #ifndef IIRFILT1_H
