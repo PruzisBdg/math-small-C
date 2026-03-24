@@ -54,6 +54,7 @@ PUBLIC S8   ClipS16toS8(S16 n);
 
 PUBLIC S8   MinS8(S8 a, S8 b);
 PUBLIC S16  MinS16(S16 a, S16 b);
+PUBLIC int  MinInt(int a, int b);
 PUBLIC S8   MaxS8(S8 a, S8 b);
 PUBLIC S8   MaxS8(S8 a, S8 b);
 PUBLIC S16  MinS16(S16 a, S16 b);
