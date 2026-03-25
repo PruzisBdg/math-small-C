@@ -100,7 +100,8 @@ PUBLIC S16  AminusBS16(S16 a, S16 b);
 PUBLIC S16  AminusBU16ToS16(U16 a, U16 b);
 PUBLIC U32  AminusBU32(U32 a, U32 b);
 
-PUBLIC BIT DecrU8_NowZero(U8 * a);
+PUBLIC BIT DecrU8_IsZero(U8 * a);
+#define DecrU8_NowZero DecrU8_IsZero
 PUBLIC BIT DecrU8_Was1_NowZero(U8 * a);
 
 #define _SignEqualsS16(a,b) ((((a) ^ (b)) & 0x8000) == 0)
