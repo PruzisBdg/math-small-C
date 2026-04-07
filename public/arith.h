@@ -74,9 +74,17 @@ PUBLIC U16  MaxU16(U16 a, U16 b);
 PUBLIC U32  MinU32(U32 a, U32 b);
 
 PUBLIC BIT  Inside_U8(U8 a, U8 min, U8 max);
+PUBLIC BIT  InsideEq_U8(U8 a, U8 min, U8 max);
+PUBLIC BIT  Inside_S8(S8 a, S8 min, S8 max);
+PUBLIC BIT  InsideEq_S8(S8 a, S8 min, S8 max);
 PUBLIC BIT  Inside_U16(U16 a, U16 min, U16 max);
+PUBLIC BIT  InsideEq_U16(U16 a, U16 min, U16 max);
 PUBLIC BIT  Inside_S16(S16 a, S16 min, S16 max); PUBLIC BIT InsideLimitsS16(S16 n, S16 min, S16 max);
-
+PUBLIC BIT  InsideEq_S16(S16 a, S16 min, S16 max);
+PUBLIC BIT  Inside_U32(U32 a, U32 min, U32 max);
+PUBLIC BIT  InsideEq_U32(U32 a, U32 min, U32 max);
+PUBLIC BIT  Inside_S32(S32 a, S32 min, S32 max);
+PUBLIC BIT  InsideEq_S32(S32 a, S32 min, S32 max);
 
 PUBLIC U8   AplusBU8(U8 a, U8 b);
 PUBLIC S16  AplusBS16(S16 a, S16 b);

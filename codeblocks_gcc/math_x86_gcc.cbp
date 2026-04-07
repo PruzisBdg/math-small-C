@@ -344,6 +344,12 @@
 		<Unit filename="../arith/src/minmax/clips8.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../arith/src/minmax/inside_eq.c">
+			<Option compilerVar="CC" />
+			<Option target="Static-Lib" />
+			<Option target="Release" />
+			<Option target="Console" />
+		</Unit>
 		<Unit filename="../arith/src/minmax/inside_limits_s16.c">
 			<Option compilerVar="CC" />
 		</Unit>
