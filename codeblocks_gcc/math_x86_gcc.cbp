@@ -279,6 +279,9 @@
 		<Unit filename="../arith/src/minmax/MinS8.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../arith/src/minmax/Min_Int.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="../arith/src/minmax/S32_fits_in_S16.c">
 			<Option compilerVar="CC" />
 		</Unit>
