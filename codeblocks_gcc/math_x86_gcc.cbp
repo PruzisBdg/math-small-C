@@ -94,6 +94,11 @@
 		<Unit filename="../arith/src/addsubtract/a_minus_b_u32.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../arith/src/addsubtract/a_minus_b_u32_to_s32.c">
+			<Option compilerVar="CC" />
+			<Option target="Static-Lib" />
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="../arith/src/addsubtract/a_minus_b_u8.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -300,6 +305,11 @@
 		<Unit filename="../arith/src/minmax/clip_float_to_long.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../arith/src/minmax/clip_float_to_s32.c">
+			<Option compilerVar="CC" />
+			<Option target="Static-Lib" />
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="../arith/src/minmax/clip_float_to_u16.c">
 			<Option compilerVar="CC" />
 			<Option target="Release" />
@@ -335,6 +345,11 @@
 		</Unit>
 		<Unit filename="../arith/src/minmax/clip_u32.c">
 			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../arith/src/minmax/clip_u32_to_s32.c">
+			<Option compilerVar="CC" />
+			<Option target="Static-Lib" />
+			<Option target="Release" />
 		</Unit>
 		<Unit filename="../arith/src/minmax/clip_u32_to_u16.c">
 			<Option compilerVar="CC" />

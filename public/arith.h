@@ -51,6 +51,7 @@ PUBLIC U16  ClipU32toU16(U32 n);
 PUBLIC U8   ClipS16toU8(S16 n);
 PUBLIC U8   ClipU16toU8(U16 n);
 PUBLIC S8   ClipS16toS8(S16 n);
+PUBLIC S32  ClipU32toS32(U32 n);
 
 PUBLIC S8   MinS8(S8 a, S8 b);
 PUBLIC S16  MinS16(S16 a, S16 b);
@@ -107,6 +108,7 @@ PUBLIC U16  AminusBU16(U16 a, U16 b);
 PUBLIC S16  AminusBS16(S16 a, S16 b);
 PUBLIC S16  AminusBU16ToS16(U16 a, U16 b);
 PUBLIC U32  AminusBU32(U32 a, U32 b);
+PUBLIC S32  AminusBU32toS32(U32 a, U32 b);
 
 PUBLIC BIT DecrU8_IsZero(U8 * a);
 #define DecrU8_NowZero DecrU8_IsZero
@@ -228,10 +230,11 @@ PUBLIC S16 LinterpFromS16Tbl_naked(S16 const *tbl, S16 x);
 #define _LinterpTblS16_Step  256
 
 PUBLIC float GetPwr10Float(S16 exp);
-PUBLIC S32   ClipFloatToLong(float f);
+PUBLIC long  ClipFloatToLong(float f);
+PUBLIC S32   ClipFloatToS32(float f);
 PUBLIC S16   ClipFloatToInt(float f);
-PUBLIC U16 ClipFloatToU16(float f);
-PUBLIC U32 ClipFloatToU32(float f);
+PUBLIC U16   ClipFloatToU16(float f);
+PUBLIC U32   ClipFloatToU32(float f);
 PUBLIC float MinFloat(float a, float b);
 PUBLIC float MaxFloat(float a, float b);
 PUBLIC float Mod_Float(float n, float d);

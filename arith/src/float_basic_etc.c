@@ -26,7 +26,7 @@ PUBLIC float MaxFloat(float a, float b) {
          : (a > b ? a : b); }
 
 
-/* ---------------------------------- ClipFloatToLong -------------------------------
+/* ---------------------------------- ClipFloatToS32 -------------------------------
 
    Corners/transitions
 
@@ -40,7 +40,8 @@ PUBLIC float MaxFloat(float a, float b) {
 
       Per Standard, result is undefined. Choose zero.
 */
-PUBLIC S32 ClipFloatToLong(float f)
+
+PUBLIC S32 ClipFloatToS32(float f)
 {
    if(isnan(f))
       return 0;
